@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Girô — o app do seu rotativo de beach tennis</title>
-<meta name="description" content="Girô organiza a presença, sorteia as duplas no formato americano e mantém o ranking ao vivo. Seu grupo de beach tennis só precisa jogar." />
+<title>Girô — o app do seu rotativo de praia</title>
+<meta name="description" content="Girô organiza a presença, sorteia as duplas com rodízio justo e mantém o ranking ao vivo. Seu rotativo de beach tennis ou vôlei de praia só precisa jogar." />
 <meta name="theme-color" content="#075D9C" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -200,8 +200,8 @@
 <header class="hero">
   <div class="wrap grid">
     <div>
-      <div class="eyebrow">Beach tennis · formato americano</div>
-      <h1>O ranking de verdade pro <span class="hl">seu rotativo</span> de beach tennis.</h1>
+      <div class="eyebrow">Beach tennis · vôlei de praia</div>
+      <h1>O ranking de verdade pro <span class="hl">seu rotativo</span> de praia.</h1>
       <p class="lead">O Girô cuida da presença, sorteia as duplas com rodízio justo e mantém o ranking ao vivo — individual e de duplas. O seu grupo só precisa jogar.</p>
       <div class="cta">
         <a href="#lista" class="btn btn-orange btn-lg">Entrar na lista de espera</a>
@@ -240,7 +240,7 @@
       <div class="feat rv">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12h4l3 8 4-16 3 8h4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <h3>Sorteio justo das duplas</h3>
-        <p>Formato americano com rodízio automático: ninguém joga 3 seguidas nem fica esperando duas rodadas.</p>
+        <p>Rodízio automático das duplas: ninguém joga 3 seguidas nem fica esperando duas rodadas.</p>
       </div>
       <div class="feat rv">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19V10M10 19V5M16 19v-6M22 19H2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
@@ -349,7 +349,7 @@
         <circle cx="110" cy="9" r="6.5" stroke-width="3"/>
       </svg>
     </span>
-    <small>Girô · o app do seu rotativo de beach tennis</small>
+    <small>Girô · o app do seu rotativo de praia</small>
   </div>
 </footer>
 
@@ -361,8 +361,8 @@
   document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 
   /* ----- waitlist -> grava no Firestore (REST, sem SDK, custo zero) ----- */
-  // Troque pelo seu projeto se um dia migrar pra um Firebase só do Girô.
-  const FIRESTORE_PROJECT = "beach-de-sexta";
+  // Projeto do Girô comercial (giro-app). Os leads caem na coleção "waitlist".
+  const FIRESTORE_PROJECT = "giro-app-96d9a";
   const WL_URL = `https://firestore.googleapis.com/v1/projects/${FIRESTORE_PROJECT}/databases/(default)/documents/waitlist`;
 
   const form = document.getElementById('wlform');
