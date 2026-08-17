@@ -65,7 +65,7 @@
   .btn:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
 
   /* ---------- hero ---------- */
-  .hero{position:relative;background:var(--blue);color:#fff;overflow:hidden;padding:64px 0 130px}
+  .hero{position:relative;background:var(--blue);color:#fff;overflow:hidden;padding:64px 0 72px}
   .hero::before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(239,113,38,.32),transparent 62%);top:-180px;right:-120px;pointer-events:none}
   .hero::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(212,217,63,.16),transparent 65%);bottom:-120px;left:-100px;pointer-events:none}
   .hero .grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
@@ -107,8 +107,6 @@
   .rrow .g{width:42px;text-align:right;font-family:'Space Mono',monospace;font-size:13px;color:var(--ink-soft)}
   .rrow.lead .g{color:#CFE3F2}
 
-  /* ---------- wave divider ---------- */
-  .wave{display:block;width:100%;height:60px;margin-top:-1px}
 
   /* ---------- sections ---------- */
   section{position:relative}
@@ -184,7 +182,7 @@
   /* ---------- responsive ---------- */
   @media(max-width:900px){
     .hero .grid{grid-template-columns:1fr;gap:38px}
-    .hero{padding:48px 0 110px}
+    .hero{padding:48px 0 52px}
     .card{max-width:420px;margin:0 auto}
     .feats{grid-template-columns:1fr 1fr}
     .steps{grid-template-columns:1fr 1fr}
@@ -257,11 +255,6 @@
     </div>
   </div>
 </header>
-
-<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
-  <path d="M0,32 C240,64 480,8 720,24 C960,40 1200,60 1440,28 L1440,60 L0,60 Z" fill="var(--blue)"></path>
-  <path d="M0,32 C240,64 480,8 720,24 C960,40 1200,60 1440,28" fill="none" stroke="var(--orange)" stroke-width="3"></path>
-</svg>
 
 <!-- FEATURES -->
 <section class="pad">
